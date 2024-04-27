@@ -1,0 +1,28 @@
+(pytorch) vince@raspberrypi:~/Desktop/Repos/pi-torch $ python test_model.py 
+loading model
+rifle 0.0025788594502955675
+assault rifle 0.0020854854956269264
+bearskin 0.001965287607163191
+cowboy hat 0.0019203397678211331
+military uniform 0.0019110087305307388
+
+Execution time: 1.0600323677062988 seconds
+(pytorch) vince@raspberrypi:~/Desktop/Repos/pi-torch $ python test_quantized_model.py 
+/home/vince/miniforge3/envs/pytorch/lib/python3.10/site-packages/torch/ao/quantization/utils.py:339: UserWarning: must run observer before calling calculate_qparams. Returning default values.
+  warnings.warn(
+loading model
+/home/vince/miniforge3/envs/pytorch/lib/python3.10/site-packages/torch/_utils.py:383: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  device=storage.device,
+Samoyed 0.8830031156539917
+Pomeranian 0.04131980240345001
+keeshond 0.01921796426177025
+collie 0.007669483311474323
+Border collie 0.006580760236829519
+
+Execution time: 0.16901779174804688 seconds
+^[[(pytorch) vince@raspberrypi:~/Desktop/Repos/pi-torch $ scrot /home/vince/
+(pytorch) vince@raspberrypi:~/Desktop/Repos/pi-torch $ scrot /home/vince/test.png
+(pytorch) vince@raspberrypi:~/Desktop/Repos/pi-torch $ sudo nano /etc/gdm3/custom.conf
+(pytorch) vince@raspberrypi:~/Desktop/Repos/pi-torch $ ^C
+(pytorch) vince@raspberrypi:~/Desktop/Repos/pi-torch $ 
+
