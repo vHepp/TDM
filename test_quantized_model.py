@@ -8,14 +8,15 @@ import urllib
 import torch
 from torchvision import models
 
-# torch.backends.quantized.engine = 'qnnpack'
+
+
+torch.backends.quantized.engine = 'qnnpack'
 
 # %%
 # Define model
 
-# model = models.quantization.mobilenet_v2(quantize=True)
+model = models.quantization.mobilenet_v2(quantize=True)
 
-model = models.mobilenet_v2()
 
 # model
 
@@ -23,8 +24,7 @@ model = models.mobilenet_v2()
 # %%
 print("loading model")
 
-# model.load_state_dict(torch.load("model_quantized.pth"))
-model.load_state_dict(torch.load("model.pth"))
+model.load_state_dict(torch.load("model_quantized.pth"))
 
 # %%
 # %%bash
